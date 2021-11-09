@@ -1,8 +1,11 @@
 // Petición HTTP get
 
+import { init } from "./js/archivo-page";
+
 //import { obtnerUsuario } from "./js/http-provider";
 //import { init } from "./js/usuarios-page";
-import * as CRUD from './js/crud-provider';
+//import * as CRUD from './js/crud-provider';
+
 
 //import { init } from "./js/chistes-page";
 
@@ -31,7 +34,7 @@ import * as CRUD from './js/crud-provider';
 
 //obtnerUsuario().then(console.log);
 //Petición GET
-CRUD.getUsuario(2).then(console.log);
+/*CRUD.getUsuario(2).then(console.log);
 // Petición POST
 CRUD.crearUsuario({
     name:'Fredys',
@@ -45,4 +48,6 @@ CRUD.actualizarUsuario(1, {
 }).then( console.log );
 
 // Petición DELETE
-CRUD.eliminararUsuario(1).then(console.log);
+CRUD.eliminararUsuario(1).then(console.log);*/
+
+init();
