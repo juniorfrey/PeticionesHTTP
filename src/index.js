@@ -30,4 +30,8 @@ import * as CRUD from './js/crud-provider';
 //init();
 
 //obtnerUsuario().then(console.log);
-CRUD.getUsuario(2).then(console.log)
+CRUD.getUsuario(2).then(console.log);
+CRUD.crearUsuario({
+    name:'Fredys',
+    job:'Ingeniero de sistemas'
+}).then( console.log )
