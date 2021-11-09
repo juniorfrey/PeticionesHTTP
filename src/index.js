@@ -34,4 +34,9 @@ CRUD.getUsuario(2).then(console.log);
 CRUD.crearUsuario({
     name:'Fredys',
     job:'Ingeniero de sistemas'
-}).then( console.log )
+}).then( console.log );
+
+CRUD.actualizarUsuario(1, {
+    name:'Junior',
+    job:'Ingeniero de carreta'
+}).then( console.log );
