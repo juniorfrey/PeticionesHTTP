@@ -1,6 +1,7 @@
 // Petición HTTP get
 
-import { obtnerUsuario } from "./js/http-provider";
+//import { obtnerUsuario } from "./js/http-provider";
+import { init } from "./js/usuarios-page";
 
 //import { init } from "./js/chistes-page";
 
@@ -25,6 +26,6 @@ import { obtnerUsuario } from "./js/http-provider";
 
 //obtenerChiste().then(console.log);
 
-//init();
+init();
 
-obtnerUsuario().then(console.log);
+//obtnerUsuario().then(console.log);
