@@ -1,6 +1,10 @@
 // Petición HTTP get
 
-import { obtenerChiste } from "./js/http-provider";
+import { obtnerUsuario } from "./js/http-provider";
+
+//import { init } from "./js/chistes-page";
+
+//import { obtenerChiste } from "./js/http-provider";
 
 //const jokeUrl = 'https://api.chucknorris.io/jokes/random';
 
@@ -19,4 +23,8 @@ import { obtenerChiste } from "./js/http-provider";
           console.log(value);
 } );*/
 
-obtenerChiste().then(console.log);
+//obtenerChiste().then(console.log);
+
+//init();
+
+obtnerUsuario().then(console.log);
