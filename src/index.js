@@ -1,7 +1,8 @@
 // Petición HTTP get
 
 //import { obtnerUsuario } from "./js/http-provider";
-import { init } from "./js/usuarios-page";
+//import { init } from "./js/usuarios-page";
+import * as CRUD from './js/crud-provider';
 
 //import { init } from "./js/chistes-page";
 
@@ -26,6 +27,7 @@ import { init } from "./js/usuarios-page";
 
 //obtenerChiste().then(console.log);
 
-init();
+//init();
 
 //obtnerUsuario().then(console.log);
+CRUD.getUsuario(2).then(console.log)
