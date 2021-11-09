@@ -30,13 +30,19 @@ import * as CRUD from './js/crud-provider';
 //init();
 
 //obtnerUsuario().then(console.log);
+//Petición GET
 CRUD.getUsuario(2).then(console.log);
+// Petición POST
 CRUD.crearUsuario({
     name:'Fredys',
     job:'Ingeniero de sistemas'
 }).then( console.log );
 
+// Petición PUT
 CRUD.actualizarUsuario(1, {
     name:'Junior',
     job:'Ingeniero de carreta'
 }).then( console.log );
+
+// Petición DELETE
+CRUD.eliminararUsuario(1).then(console.log);
