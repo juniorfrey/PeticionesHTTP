@@ -1,6 +1,8 @@
 // Petición HTTP get
 
-const jokeUrl = 'https://api.chucknorris.io/jokes/random';
+import { obtenerChiste } from "./js/http-provider";
+
+//const jokeUrl = 'https://api.chucknorris.io/jokes/random';
 
 /*fetch( jokeUrl ).then( resp => {
     //resp.json().then(data) => {
@@ -11,8 +13,10 @@ const jokeUrl = 'https://api.chucknorris.io/jokes/random';
     })
 })*/
 
-fetch ( jokeUrl ).then(resp => resp.json() )
+/*fetch ( jokeUrl ).then(resp => resp.json() )
       .then( ({id, value}) => {
           console.log(id);
           console.log(value);
-      } );
+} );*/
+
+obtenerChiste().then(console.log);
