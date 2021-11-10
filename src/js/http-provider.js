@@ -28,7 +28,7 @@ const obtnerUsuario = async() => {
 }
 
 // Archivo Tipo File
-const subirImagen = (archivoSubir) => {
+const subirImagen = async(archivoSubir) => {
 
     const formData = new FormData();
     formData.append('upload_preset',cloudPreset);
@@ -42,7 +42,9 @@ const subirImagen = (archivoSubir) => {
 
         if( resp.ok ){
             const cloudResp = await resp.json();
-            console.log(cloudResp);
+            return cloudResp.secure_url;
+        }else{
+            throw await resp.json();
         }
 
     } catch (error) {
@@ -53,5 +55,6 @@ const subirImagen = (archivoSubir) => {
 
 export {
     obtenerChiste,
-    obtnerUsuario
+    obtnerUsuario,
+    subirImagen
 }
